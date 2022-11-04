@@ -1027,10 +1027,23 @@ footer {
 .footer-form__btn-send:focus{
     background-color: var(--herobuttonactive);
 }
-.maincontent {
+.main-content {
     padding-top: 94px;
 }
-.buttonlist {
+.portfolio__notitle{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+
+}
+.button-list {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -1039,18 +1052,18 @@ footer {
     margin-block-end:0;
     margin-bottom: 50px;
 }
-.button-item{
+.button-list__item{
     padding-inline-start:0;
     margin-right: 9px;
 
 }
-.button-item:nth-last-child(1){
+.button-list__item:nth-last-child(1){
     margin-right:0;
 }
 
 
 
-.btn {
+.button-list__btn {
     background: var(--backgroundworklist);
     border-radius: 4px;
     text-align: center;
@@ -1070,24 +1083,24 @@ footer {
 
 }
 
-.btn:hover,
-.btn:focus {
+.button-list__btn:hover,
+.button-list__btn:focus {
     color: var(--background-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12)
 }
 
-.btn.current {
+.button-list__btn--current {
     color: var(--background-color);
     background-color: var(--accent-color);
 }
-.imgpic {
+.img-list__pic {
     display: block;
     max-width: 100%;
     height: auto;
    
 }
-.imglist {
+.img-list {
     
     display: flex;
     flex-wrap: wrap;
@@ -1101,7 +1114,7 @@ footer {
     padding-bottom: 94px;
  
 }
-.activebox{
+.img-list__link{
     text-decoration: none;
     display: block;
     transition-property: box-shadow;
@@ -1109,17 +1122,17 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.activebox:hover,
-.activebox:focus{
+.img-list__link:hover,
+.img-list__link:focus{
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.activebox:hover .card-overlay{
+.img-list__link:hover .img-list__card-overlay{
     transform: translateY(0);
     
 }
 
 
-.imgbox {
+.img-list__box {
    
     
    
@@ -1138,7 +1151,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 
 
-.imgtitle {
+.img-list__img-title {
 
     font-weight: 700;
     font-size: 18px;
@@ -1150,7 +1163,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     margin-block-end: 0;
 }
 
-.box-text-two{
+.img-list__card-text{
    
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1163,12 +1176,12 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     border-top: none;
     
 }
-.overlay-thumb{
+.img-list__overlay{
 position: relative;
 overflow: hidden;
 
 }
-.text-overlay{
+.img-list__text-overlay{
     margin: 0;
     padding: 63px 24px;
     font-weight: 400;
@@ -1177,7 +1190,7 @@ overflow: hidden;
     letter-spacing: 0.03em;
     color: var(--background-color);
 }
-.card-overlay{
+.img-list__card-overlay{
 position: absolute;
 background-color: rgba(33, 150, 243, 0.9);
 top: 0;
@@ -1190,11 +1203,9 @@ transition-property: transform , opacity ;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 pointer-events: none;
-
-
 }
 
-.imgname {
+.img-list__img-name {
 
 
     font-size: 16px;
