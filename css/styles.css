@@ -65,15 +65,15 @@ html {
     margin-right: auto;
 }
     
-.page-header__main-nav{
+.main-nav{
     display:flex;
     align-items: center;
 }
-.page-header__header-box{
+.header-box{
     display: flex;
 }
 
-.main-nav__site-nav {
+.site-nav {
     list-style-type: none;
     display: flex;
     padding-inline-start: 0;
@@ -846,7 +846,7 @@ footer {
     margin-left: 93px;
 
 }
- .container__footer{
+ .container-footer{
     display: flex;
     align-items: baseline;
     width: 1200px;
