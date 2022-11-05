@@ -5,14 +5,14 @@
     padding-inline-start: 0;
 
 
-}
 
-.nav-contacts__item-part+.nav-contacts__item-part {
+
+&__item-part+&__item-part {
     margin-left: 50px;
 }
 
 
-.nav-contacts__link-part {
+&__link-part {
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -33,8 +33,9 @@
 }
 
 
-.nav-contacts__link-part:hover,
-.nav-contacts__link-part:focus {
+&__link-part:hover,
+&__link-part:focus {
     color: var(--accent-color);
 
+}
 }

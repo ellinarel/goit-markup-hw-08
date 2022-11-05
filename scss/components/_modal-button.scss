@@ -1,7 +1,4 @@
-.btn-modal-thumb {
-    display: flex;
-    justify-content: center;
-}
+
 
 .btn-modal {
 
@@ -23,8 +20,14 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.btn-modal:focus {
+
+&:focus ,
+&:hover{
     background-color: var(--herobuttonactive);
+}
+}
+.btn-modal-thumb {
+    display: flex;
+    justify-content: center;
 }

@@ -4,9 +4,9 @@
     padding-inline-start: 0;
     margin-top: 0;
     margin-bottom: 0;
-}
 
-.site-nav__link {
+
+&__link {
     color: var(--tittle-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -21,8 +21,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.site-nav__link:hover,
-.site-nav__link:focus {
+&__link:hover,
+&__link:focus {
     color: var(--accent-color);
 }
 
@@ -46,12 +46,12 @@
 }
 
 
-.site-nav__item {
+&__item {
     margin-right: 50px;
 }
 
-.site-nav__item:last-child {
+&__item:last-child {
     margin-right: 0;
 }
 
-
+}

@@ -1,10 +1,10 @@
 .todolist {
     padding-bottom: 94px;
-}
 
 
 
-.todolist__title {
+
+&__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -14,6 +14,7 @@
     margin: 0;
 
 
+}
 }
 
 .work-list {
@@ -25,31 +26,31 @@
     margin-top: 50px;
 
 
-}
 
-.work-list__item {
+
+&__item {
     margin-right: 30px;
 
 }
 
-.work-list__item:last-child {
+&__item:last-child {
     margin-right: 0;
 }
 
-.work-list__img {
+&__img {
     display: block;
     width: 100%;
 
 }
 
-.work-list__box {
+&__box {
     position: relative;
 
 
 
 }
 
-.work-list__thumb {
+&__thumb {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -62,7 +63,7 @@
 
 }
 
-.work-list__thumb-text {
+&__thumb-text {
 
     position: absolute;
     margin: 0;
@@ -75,4 +76,5 @@
     text-transform: uppercase;
     color: var(--background-color);
 
+}
 }

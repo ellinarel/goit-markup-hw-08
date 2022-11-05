@@ -1,11 +1,11 @@
-.address-list {
+& {
     list-style-type: none;
     padding-left: 0;
     margin-block-start: 0;
     margin-block-end: 0;
-}
 
-.address-list__link--accent {
+
+&__link--accent {
 
     font-size: 14px;
     line-height: 1.7;
@@ -19,15 +19,15 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-list__link--accent:hover {
+&__link--accent:hover {
     color: var(--accent-color);
 }
 
-.address-list__link--accent:focus {
+&__link--accent:focus {
     color: var(--accent-color);
 }
 
-.address-list__link {
+&__link {
 
     font-size: 14px;
     line-height: 1.7;
@@ -42,14 +42,15 @@
 
 }
 
-.address-list__link:hover,
-.address-list__link:focus {
+&__link:hover,
+&__link:focus {
     color: var(--accent-color);
 }
-.address-list__item {
+&__item {
     margin-bottom: 9px;
 }
 
-.address-list__item:nth-last-child(1) {
+&__item:nth-last-child(1) {
     margin-bottom: 0
+}
 }

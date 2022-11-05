@@ -9,11 +9,12 @@
     display: block;
     margin-bottom: 20px;
 
-}
-.footer-contacts__logo-accent {
+
+&__logo-accent {
     color: var(--accent-color);
 }
 
-.footer-contacts__logo {
+&__logo {
     color: var(--background-color);
+}
 }

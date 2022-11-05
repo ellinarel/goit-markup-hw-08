@@ -1,8 +1,8 @@
 .footer-form {
     display: flex;
-}
 
-.footer-form__input {
+
+&__input {
     width: 358px;
     height: 50px;
     background-color: var(--background-color-footer);
@@ -21,11 +21,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form__input:focus {
+&__input:focus {
     border-color: var(--accent-color);
 }
 
-.footer-form__btn-send {
+&__btn-send {
 
     display: flex;
     justify-content: center;
@@ -52,7 +52,8 @@
 
 }
 
-.footer-form__btn-send:hover,
-.footer-form__btn-send:focus {
+&__btn-send:hover,
+&__btn-send:focus {
     background-color: var(--herobuttonactive);
+}
 }

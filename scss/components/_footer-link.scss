@@ -1,9 +1,9 @@
 .footer-link {
     margin-left: 93px;
     position: relative;
-}
 
-.footer-link__title {
+
+&__title {
     color: var(--background-color);
     font-weight: 700;
     font-size: 14px;
@@ -12,4 +12,5 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 
+}
 }
