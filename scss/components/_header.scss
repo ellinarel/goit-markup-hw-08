@@ -1,0 +1,140 @@
+.page-header {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-box {
+    display: flex;
+}
+
+.site-nav {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-nav__link {
+    color: var(--tittle-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.link--current {
+    color: var(--accent-color);
+    position: relative;
+    display: block;
+}
+
+.link--current::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+
+}
+
+
+
+
+.site-nav__item {
+    margin-right: 50px;
+}
+
+.site-nav__item:last-child {
+    margin-right: 0;
+}
+
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: var(--accent-color);
+}
+
+.main-nav__logo-word {
+    font-family: 'Raleway', sans-serif;
+    color: var(--accent-color)
+}
+
+.main-nav__logo-link {
+    font-family: 'Raleway', sans-serif;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--logocolor);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+
+.nav-contacts {
+    list-style: none;
+    display: flex;
+    margin: 0 0 0 auto;
+    padding-inline-start: 0;
+
+
+}
+
+.nav-contacts__item-part+.nav-contacts__item-part {
+    margin-left: 50px;
+}
+
+
+.nav-contacts__link-part {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    color: var(--primary-text-color);
+    gap: 10px;
+    fill: currentColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.nav-contacts__link-part:hover,
+.nav-contacts__link-part:focus {
+    color: var(--accent-color);
+
+}
