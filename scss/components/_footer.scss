@@ -1,0 +1,22 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-color-footer);
+
+
+}
+.container-footer {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+
+}
+.footer-contacts+.footer-social-links {
+    margin-left: 93px;
+
+}

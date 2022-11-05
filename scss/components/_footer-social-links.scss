@@ -1,0 +1,24 @@
+.footer-social-links__title {
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+
+.footer-social-links .social-links-list__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--background-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-links .social-links-list__link:hover,
+.footer-social-links .social-links-list__link:focus {
+    background-color: var(--accent-color);
+}

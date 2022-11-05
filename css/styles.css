@@ -139,12 +139,12 @@ html {
     color: var(--accent-color);
 }
 
-.main-nav__logo-word {
+.logo-word {
     font-family: 'Raleway', sans-serif;
     color: var(--accent-color)
 }
 
-.main-nav__logo-link {
+.logo-link {
     font-family: 'Raleway', sans-serif;
 
     font-weight: 700;
@@ -610,13 +610,6 @@ html {
     padding-bottom: 94px;
 }
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-
-}
 
 
 .todolist__title {
