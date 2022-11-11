@@ -12,6 +12,16 @@
     --boxborder: #EEEEEE;
     --iconcolor: #AFB1B8;
 }
-$text-font-stack: “Roboto”, sans-serif;
-$logo-font-stack: ‘Raleway’, sans-serif;
+$text-font-stack: “Roboto” , sans-serif;
+$logo-font-stack: "Raleway" , sans-serif;
+
+$breakpoints: (
+    "pre-little": (max-width: 479px),
+    "little": (min-width: 480px),
+    "small": (min-width: 576px),
+    "pre-medium": (max-width: 767px),
+    "medium": (min-width: 768px),
+    "pre-large": (max-width: 1199px),
+    "large": (min-width: 1200px),
+    ) !default;
 

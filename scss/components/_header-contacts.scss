@@ -1,41 +1,68 @@
 .nav-contacts {
     list-style: none;
-    display: flex;
     margin: 0 0 0 auto;
     padding-inline-start: 0;
 
 
+ @include respondTo("pre-medium") {
+     display: none;
+ }
 
+ @include respondTo("large") {
+    display: flex;
+    
+   
+ }
+  @include respondTo("pre-large"){
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-&__item-part+&__item-part {
-    margin-left: 50px;
+ }
+
+ @include respondTo("large") {
+.nav-contacts__item-part + .nav-contacts__item-part {
+    margin-left: 50px;}
+}
+@include respondTo("medium") {
+    .nav-contacts__item-part:nth-child(1){
+    margin-bottom: 10px;
+    }
 }
 
-
-&__link-part {
+.nav-contacts__link-part {
     text-decoration: none;
-    display: flex;
-    justify-content: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    text-align: center;
     align-items: center;
     color: var(--primary-text-color);
-    gap: 10px;
+
     fill: currentColor;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+@include respondTo("large"){
+    gap: 10px;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+   
+    }
+     @include respondTo("medium"){
+        display: flex;
+        gap: 10px;
+     }
+
 }
 
-
-&__link-part:hover,
-&__link-part:focus {
+.nav-contacts__link-part:hover,
+.nav-contacts__link-part:focus {
     color: var(--accent-color);
 
 }
-}
+
+

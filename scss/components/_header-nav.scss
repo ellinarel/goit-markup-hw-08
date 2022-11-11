@@ -53,5 +53,7 @@
 &__item:last-child {
     margin-right: 0;
 }
-
+ @include respondTo("pre-medium") {
+     display: none;
+ }
 }
