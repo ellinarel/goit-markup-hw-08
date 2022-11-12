@@ -13,7 +13,9 @@
     text-align: center;
     margin: 0;
 
-
+@include respondTo("pre-large"){
+    display: none;
+}
 }
 }
 
@@ -76,5 +78,8 @@
     text-transform: uppercase;
     color: var(--background-color);
 
+}
+@include respondTo("pre-large") {
+    display: none;
 }
 }

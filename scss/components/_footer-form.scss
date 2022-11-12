@@ -1,8 +1,14 @@
 .footer-form {
+    @include respondTo("pre-medium"){
+        text-align: center;
+    }
+    @include respondTo("large"){
     display: flex;
+    }
+}
 
 
-&__input {
+.footer-form__input {
     width: 358px;
     height: 50px;
     background-color: var(--background-color-footer);
@@ -21,11 +27,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__input:focus {
+.footer-form__input:focus {
     border-color: var(--accent-color);
 }
 
-&__btn-send {
+.footer-form__btn-send {
 
     display: flex;
     justify-content: center;
@@ -33,7 +39,7 @@
     text-align: center;
     border: none;
     border-radius: 4px;
-    margin-left: 12px;
+    
     cursor: pointer;
     gap: 12px;
     width: 200px;
@@ -49,11 +55,22 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include respondTo("large") {
+            margin-left: 12px;
+        }
+    
 
 }
+.footer-btn-thumb{
+    @include respondTo("pre-medium") {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
 
-&__btn-send:hover,
-&__btn-send:focus {
+        }
+}
+
+.footer-form__btn-send:hover,
+.footer-form__btn-send:focus {
     background-color: var(--herobuttonactive);
-}
 }

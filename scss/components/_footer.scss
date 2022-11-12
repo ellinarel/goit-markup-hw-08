@@ -6,17 +6,35 @@ footer {
 
 }
 .container-footer {
-    display: flex;
-    align-items: baseline;
-    width: 1200px;
+   
+    
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+@include respondTo("large"){
+    align-items: baseline;
+    width: 1200px;
+    display: flex;
 
 }
+}
+@include respondTo("large") {
 .footer-contacts+.footer-social-links {
     margin-left: 93px;
+
+}
+}
+.footer-contacts{
+    @include respondTo("pre-medium"){
+    text-align: center;
+    }
+}
+.footer-social-links{
+    @include respondTo("pre-medium") {
+    text-align: center;
+    margin-top: 60px;
+    }
 
 }

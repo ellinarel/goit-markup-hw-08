@@ -1,9 +1,18 @@
 .footer-link {
-    margin-left: 93px;
+    @include respondTo("pre-medium") {
+        text-align: center;
+        margin-top: 60px;
+        }
+               
+   
+    @include respondTo("large"){
     position: relative;
+    margin-left: 93px;
+    }
+}
 
 
-&__title {
+.footer-link__title {
     color: var(--background-color);
     font-weight: 700;
     font-size: 14px;
@@ -11,6 +20,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+    
 
-}
 }

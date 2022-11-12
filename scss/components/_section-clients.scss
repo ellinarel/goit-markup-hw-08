@@ -19,13 +19,14 @@
 .clients-list {
     list-style: none;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;}
 
 
 
 
 
-&__link {
+.clients-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,22 +42,77 @@
 
 }
 
-&__link:hover,
-&__link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
 
 }
 
-&__item {
+.clients-list__item {
     display: flex;
+   
+   
+    
+    
+   
+    @include respondTo("pre-medium"){
+        width: 210px;
+        height: 92px;
+       
+
+    }
+    @include respondTo(medium){
+        width: 226px;
+        height: 92px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    @include respondTo("large") {
+             width: 170px;
+             height: 92px;
+             margin-right: 30px;
+             margin-bottom: 0;
+           
+    
+         }
+   
+        }
+.clients-list__item:nth-child(odd) {
+    @include respondTo("pre-medium") {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.clients-list__item:nth-last-child(1),
+.clients-list__item:nth-last-child(2) {
+    @include respondTo("pre-medium") {
+        margin-bottom: 0
+    }
+}
+ 
+.clients-list__item:nth-child(3),
+.clients-list__item:nth-child(6){
+    @include respondTo(medium) {
+        margin-right: 0;
+    }
+
+}
+.clients-list__item:nth-child(4),
+.clients-list__item:nth-child(5),
+.clients-list__item:nth-child(6)
+{
+    @include respondTo(medium) {
+        margin-bottom: 0;
+    }
+}
+
+
+.clients-list__item:nth-child(3)
+{
+    @include respondTo("large"){
     margin-right: 30px;
-    width: 170px;
-    height: 92px;
-
+    }
 }
 
-&__item:nth-last-child(1) {
-    margin-right: 0;
-}
-}
