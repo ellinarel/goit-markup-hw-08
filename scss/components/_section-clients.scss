@@ -18,9 +18,18 @@
 
 .clients-list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;}
+    gap: 30px;
+    justify-content: center;
+
+    @include respondTo("pre-large"){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include respondTo("large"){
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
 
 
 
@@ -50,69 +59,35 @@
 }
 
 .clients-list__item {
-   
+    
     @include respondTo("pre-medium"){
-        display: flex;
         width: 210px;
-        height: 92px;
-       
+        height: 92px; 
+         }
+               
 
-    }
-    @include respondTo(medium){
-        display: flex;
+   
+    @include respondTo("medium"){
         width: 226px;
         height: 92px;
-        margin-right: 30px;
-        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        
+       
+        
+       
+        
     }
     @include respondTo("large") {
-            display: flex;
-             width: 170px;
-             height: 92px;
-             margin-right: 30px;
-             margin-bottom: 0;
-           
-    
-         }
-   
-        }
-
-
-.clients-list__item:nth-child(odd) {
-    @include respondTo("pre-medium") {
-        margin-right: 30px;
-        margin-bottom: 30px;
-    }
-}
-
-.clients-list__item:nth-last-child(1),
-.clients-list__item:nth-last-child(2) {
-    @include respondTo("pre-medium") {
-        margin-bottom: 0
-    }
-}
- 
-.clients-list__item:nth-child(3),
-.clients-list__item:nth-child(6){
-    @include respondTo(medium) {
-        margin-right: 0;
+        width: 170px;
+        height: 92px;
+        display: flex;
+        flex-wrap: nowrap;
+       
+        flex-basis: calc((100% - 90px) / 4);
+            
+            
+            
     }
 
-}
-.clients-list__item:nth-child(4),
-.clients-list__item:nth-child(5),
-.clients-list__item:nth-child(6)
-{
-    @include respondTo(medium) {
-        margin-bottom: 0;
-    }
-}
-
-
-.clients-list__item:nth-child(3)
-{
-    @include respondTo("large"){
-    margin-right: 30px;
-    }
-}
-
+   }
