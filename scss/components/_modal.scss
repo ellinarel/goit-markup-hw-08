@@ -43,18 +43,18 @@
     align-items: center;
     position: absolute;
     top: 8px;
-    right: 8px;
-    width: 30px;
+    right: 9px;
+    min-width: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    height: 30px;
+    min-height: 30px;
     border-radius: 50%;
     background-color: var(--background-color);
     cursor: pointer;
     fill: var(--logocolor);
 
-  @include respondTo("pre-little") {
+  @include respondTo("pre-medium") {
         top: 10px;
-        right: 15px;
+        right: 16px;
     }
 
 }
