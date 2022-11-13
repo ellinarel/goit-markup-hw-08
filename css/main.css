@@ -776,8 +776,6 @@ footer {
 @media (max-width: 479px) {
   .modal {
     width: 430px;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 }
 
@@ -804,9 +802,9 @@ footer {
   position: absolute;
   top: 8px;
   right: 8px;
-  min-width: 40px;
+  width: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  min-height: 40px;
+  height: 30px;
   border-radius: 50%;
   background-color: var(--background-color);
   cursor: pointer;
