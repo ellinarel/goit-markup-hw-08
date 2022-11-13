@@ -61,6 +61,7 @@
 .clients-list__item {
    
     @include respondTo("pre-medium"){
+        flex-basis: calc((100% - 30px) / 2);
         width: 210px;
         height: 92px; 
          }
@@ -90,5 +91,6 @@
             
             
     }
+        
 
    }
