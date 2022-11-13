@@ -1923,6 +1923,12 @@ footer {
   color: var(--accent-color);
   padding: 10px;
 }
+@media (max-width: 479px) {
+  .mobile-menu-soclink {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 
 .mobile-menu-soclink.link {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
