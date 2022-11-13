@@ -773,12 +773,6 @@ footer {
     height: 581px;
   }
 }
-@media (max-width: 479px) {
-  .modal {
-    width: 100%;
-  }
-}
-
 .modal__caption {
   font-weight: 700;
   font-size: 20px;
@@ -877,6 +871,11 @@ footer {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 479px) {
+  .form-input {
+    width: 100%;
+  }
 }
 
 .form-input:focus {

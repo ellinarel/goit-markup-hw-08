@@ -59,11 +59,12 @@
 }
 
 .clients-list__item {
-    
+   
     @include respondTo("pre-medium"){
         width: 210px;
         height: 92px; 
          }
+        
                
 
    
