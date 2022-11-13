@@ -137,22 +137,19 @@ display: flex;
 list-style: none;
 
 }
-
+ .mobile-menu-social-links:nth-last-child(1) {
+     border-right: none;
+ }
 .mobile-menu-soclink{
+display: block;
 text-decoration: none;
 font-weight: 500;
 font-size: 18px;
 line-height: 22px;
 letter-spacing: 0.02em;
 color: var(--accent-color);
-
-
-}
-.link-border{
-    height: 0;
-    width: 22px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+padding: 10px;
 }
 
 
