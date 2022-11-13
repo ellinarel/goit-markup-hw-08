@@ -773,6 +773,11 @@ footer {
     height: 581px;
   }
 }
+@media (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
 
 .modal__caption {
   font-weight: 700;
@@ -973,6 +978,12 @@ footer {
   color: var(--primary-text-color);
   padding-left: 24px;
   padding-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .checkbox-label {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .checkbox-icon {

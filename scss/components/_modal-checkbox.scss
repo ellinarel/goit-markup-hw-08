@@ -25,6 +25,10 @@
     color: var(--primary-text-color);
     padding-left: 24px;
     padding-bottom: 0;
+    @include respondTo("pre-large"){
+    font-size: 12px;
+    line-height: 14px;
+    }
 }
 
 .checkbox-icon {

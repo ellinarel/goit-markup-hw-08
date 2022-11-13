@@ -21,6 +21,9 @@
         height: 581px;
 
     }
+    @include respondTo("pre-little"){
+        width: 100%;
+    }
 }
 
 .modal__caption {
