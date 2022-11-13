@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-
+    padding: 40px 40px 40px 40px;
     top: 50%;
     left: 50%;
     
@@ -8,10 +8,9 @@
     background: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px 40px 40px 40px;
+  
 
     @include respondTo("pre-large"){
-    
     width: 450px;
     height: 609px;
     }
@@ -19,10 +18,12 @@
     @include respondTo("large"){
         width: 528px;
         height: 581px;
-
+       
     }
     @include respondTo("pre-little"){
         width: 430px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 

@@ -751,6 +751,7 @@ footer {
 
 .modal {
   position: absolute;
+  padding: 40px 40px 40px 40px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -759,7 +760,6 @@ footer {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px 40px 40px 40px;
 }
 @media (max-width: 1199px) {
   .modal {
@@ -776,6 +776,8 @@ footer {
 @media (max-width: 479px) {
   .modal {
     width: 430px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -1431,8 +1433,10 @@ footer {
     margin-right: 0px;
   }
 }
-.todolist {
-  padding-bottom: 94px;
+@media (min-width: 1200px) {
+  .todolist {
+    padding-bottom: 94px;
+  }
 }
 .todolist__title {
   font-weight: 700;
@@ -1446,6 +1450,7 @@ footer {
 @media (max-width: 1199px) {
   .todolist__title {
     display: none;
+    padding-bottom: 0;
   }
 }
 

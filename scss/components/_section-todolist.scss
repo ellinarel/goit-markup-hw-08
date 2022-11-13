@@ -1,5 +1,9 @@
 .todolist {
-    padding-bottom: 94px;
+    @include respondTo("large"){
+     padding-bottom: 94px;
+    }
+
+    
 
 
 
@@ -15,6 +19,7 @@
 
 @include respondTo("pre-large"){
     display: none;
+    padding-bottom: 0;
 }
 }
 }
