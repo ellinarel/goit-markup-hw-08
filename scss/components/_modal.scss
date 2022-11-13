@@ -52,11 +52,6 @@
     cursor: pointer;
     fill: var(--logocolor);
 
-  @include respondTo("pre-medium") {
-        top: 10px;
-        right: 16px;
-    }
-
 }
 
 .close-button:hover,

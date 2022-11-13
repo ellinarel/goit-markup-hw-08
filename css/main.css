@@ -810,12 +810,6 @@ footer {
   cursor: pointer;
   fill: var(--logocolor);
 }
-@media (max-width: 767px) {
-  .close-button {
-    top: 10px;
-    right: 16px;
-  }
-}
 
 .close-button:hover,
 .close-button:focus {
