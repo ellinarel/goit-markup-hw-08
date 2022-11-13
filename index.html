@@ -346,12 +346,54 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                class="team-list__img"
-                src="./images/box6.jpg"
-                alt="Портрет Миколи Тарасова"
-                width="270"
-              />
+              <picture>
+                  <source
+                    srcset="
+                    ./images/marketing-mob.webp 1x,
+                    ./images/marketing-mob2.webp 2x"
+                    
+                    type="image/webp"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/marketing-tablet.webp 1x,
+                    ./images/marketing-tablet2.webp 2x"
+                    type="image/webp"
+                    media="(max-width:1199px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/marketing-desktop.webp 1x,
+                    ./images/marketing-desktop2.webp 2x"
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/marketing-mob.jpg 1x,
+                    ./images/marketing-mob2.jpg 2x"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/marketing-tablet.jpg 1x,
+                    ./images/marketing-tablet2.jpg 2x"
+                    media="(max-width:1199px)"
+                  />
+                  <source
+                    srcset="./images/marketing-desktop.jpg 1x,
+                    ./images/marketing-desktop2.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    loading="lazy"
+                    class="picture"
+                    src="./images/marketing-desktop.jpg"
+                    alt="marketing"
+                    sizes="(min-width:1200px)25vw,(min-width:768px)50vw,100vw"
+                  />
+               </picture>
               <div class="team-list__text">
                 <h3 class="team-list__name">Микола Тарасов</h3>
                 <p class="team-list__job">Marketing</p>
@@ -372,12 +414,54 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                class="team-list__img"
-                src="./images/box7.jpg"
-                alt="Портрет Міхайла Єрмакова"
-                width="270"
-              />
+              <picture>
+                  <source
+                    srcset="
+                    ./images/ui-mob.webp 1x,
+                    ./images/ui-mob2.webp 2x"
+                    
+                    type="image/webp"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/ui-tablet.webp 1x,
+                    ./images/ui-tablet2.webp 2x"
+                    type="image/webp"
+                    media="(max-width:1199px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/ui-desktop.webp 1x,
+                    ./images/ui-desktop2.webp 2x"
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/ui-mob.jpg 1x,
+                    ./images/ui-mob2.jpg 2x"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/ui-tablet.jpg 1x,
+                    ./images/ui-tablet2.jpg 2x"
+                    media="(max-width:1199px)"
+                  />
+                  <source
+                    srcset="./images/ui-desktop.jpg 1x,
+                    ./images/ui-desktop2.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    loading="lazy"
+                    class="picture"
+                    src="./images/ui-desktop.jpg"
+                    alt="ui"
+                    sizes="(min-width:1200px)25vw,(min-width:768px)50vw,100vw"
+                  />
+               </picture>
               <div class="team-list__text">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
                 <p class="team-list__job">UI Designer</p>
