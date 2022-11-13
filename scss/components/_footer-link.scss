@@ -5,10 +5,17 @@
         }
                
    
-    @include respondTo("large"){
-    position: relative;
-    margin-left: 93px;
+
+    @include respondTo ("medium"){
+        text-align: center;
+        margin-top: 60px;
     }
+    @include respondTo("large") {
+            text-align: start;
+             position: relative;
+             margin-left: 93px;
+             margin-top: 0;
+         }
 }
 
 

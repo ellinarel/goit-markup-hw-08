@@ -9,8 +9,7 @@
 
 
 .footer-form__input {
-    width: 358px;
-    height: 50px;
+   
     background-color: var(--background-color-footer);
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -25,6 +24,15 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include respondTo("large") {
+            width: 358px;
+            height: 50px;
+        }
+    @include respondTo("pre-large"){
+        width: 450px;
+        height: 50px;
+    }
+
 }
 
 .footer-form__input:focus {
@@ -68,6 +76,14 @@
             margin-top: 20px;
 
         }
+    @include respondTo("medium") {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    @include respondTo("large"){
+        margin-top: 0;
+    }
 }
 
 .footer-form__btn-send:hover,
