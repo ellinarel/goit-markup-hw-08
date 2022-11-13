@@ -15,7 +15,30 @@
     border-radius: 50%;
     outline: none;
 }
+.menu-toggle-btn{
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 21px;
+        right: 25px;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, .1);
+        fill: var(--logocolor);
 
+}
+.menu-toggle-btn:hover,
+.menu-toggle-btn:focus {
+    fill: var(--accent-color);
+}
 @media (min-width: 768px) {
     .menu-toggle {
     display: none;
