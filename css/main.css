@@ -773,6 +773,12 @@ footer {
     height: 581px;
   }
 }
+@media (max-width: 479px) {
+  .modal {
+    width: 430px;
+  }
+}
+
 .modal__caption {
   font-weight: 700;
   font-size: 20px;
