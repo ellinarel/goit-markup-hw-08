@@ -802,9 +802,9 @@ footer {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 40px;
+  min-width: 40px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  height: 40px;
+  min-height: 40px;
   border-radius: 50%;
   background-color: var(--background-color);
   cursor: pointer;
