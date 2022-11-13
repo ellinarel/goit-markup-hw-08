@@ -1893,7 +1893,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  gap: 20px;
 }
 
 .mobile-menu-soclink {
