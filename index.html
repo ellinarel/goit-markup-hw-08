@@ -278,12 +278,54 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                class="team-list__img"
-                src="./images/box5.jpg"
-                alt="Портрет Ольги Рєпіної"
-                width="270"
-              />
+               <picture>
+                  <source
+                    srcset="
+                    ./images/developer-mob.webp 1x,
+                    ./images/developer-mob2.webp 2x"
+                    
+                    type="image/webp"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/developer-tablet.webp 1x,
+                    ./images/developer-tablet2.webp 2x"
+                    type="image/webp"
+                    media="(max-width:1199px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/developer-desktop.webp 1x,
+                    ./images/developer-desktop2.webp 2x"
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/developer-mob.jpg 1x,
+                    ./images/developer-mob2.jpg 2x"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/developer-tablet.jpg 1x,
+                    ./images/developer-tablet2.jpg 2x"
+                    media="(max-width:1199px)"
+                  />
+                  <source
+                    srcset="./images/developer-desktop.jpg 1x,
+                    ./images/developer-desktop2.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    loading="lazy"
+                    class="picture"
+                    src="./images/developer-desktop.jpg"
+                    alt="developer"
+                    sizes="(min-width:1200px)25vw,(min-width:768px)50vw,100vw"
+                  />
+               </picture>
               <div class="team-list__text">
                 <h3 class="team-list__name">Ольга Рєпіна</h3>
                 <p class="team-list__job">Frontend Developer</p>
