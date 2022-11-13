@@ -208,12 +208,61 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__card">
-              <img
-                class="team-list__img"
-                src="./images/box4.jpg"
-                alt="Портрет Ігора Дем'яненко"
-                width="270"
-              />
+              <picture>
+                  <source
+                    srcset=”
+                      ./images/mobile/team-img/team-1.webp   1x,
+                      ./images/mobile/team-img/team2x-1.webp 2x
+                    ”
+                    type=“image/webp”
+                    media=“(max-width: 767px)”
+                  />
+                  <source
+                    srcset=”
+                      ./images/tablet/team-img/team-1.webp   1x,
+                      ./images/tablet/team-img/team2x-1.webp 2x
+                    ”
+                    type=“image/webp”
+                    media=“(max-width: 1199px)”
+                  />
+                  <source
+                    srcset=”
+                      ./images/desktop/team-img/team-1.webp   1x,
+                      ./images/desktop/team-img/team2x-1.webp 2x
+                    ”
+                    type=“image/webp”
+                    media=“(min-width: 1200px)”
+                  />
+                  <source
+                    srcset=”
+                      ./images/mobile/team-img/team-1.jpg   1x,
+                      ./images/mobile/team-img/team2x-1.jpg 2x
+                    ”
+                    media=“(max-width: 767px)”
+                  />
+                  <source
+                    srcset=”
+                      ./images/tablet/team-img/team-1.jpg   1x,
+                      ./images/tablet/team-img/team2x-1.jpg 2x
+                    ”
+                    media=“(max-width: 1199px)”
+                  />
+                  <source
+                    srcset=”
+                      ./images/desktop/team-img/team-1.jpg   1x,
+                      ./images/desktop/team-img/team2x-1.jpg 2x
+                    ”
+                    media=“(min-width: 1200px)”
+                  />
+                  <img
+                    loading=“lazy”
+                    class=“picture”
+                    src=“./images/desktop/team-img/team-1.jpg”
+                    alt=“Чоловік, який посміхається, у темній сорочці та окулярах”
+                    sizes=“(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw”
+                  />
+               </picture>
+                  
 
               <div class="team-list__text">
                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
