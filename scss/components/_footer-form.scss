@@ -27,14 +27,15 @@
     @include respondTo("pre-medium"){
     width: 100%;
     }
-    @include respondTo("large") {
-            width: 358px;
-           
-        }
+   
     @include respondTo("medium"){
         width: 450px;
         
     }
+    @include respondTo("large") {
+             width: 358px;
+    
+         }
 
 }
 
