@@ -6,21 +6,22 @@
     margin-block-start: 0;
     margin-block-end: 0;
     margin-bottom: 50px;
+}
 
 
-&__item {
+.button-list__item {
     padding-inline-start: 0;
     margin-right: 9px;
 
 }
 
-&__item:nth-last-child(1) {
+.button-list__item:nth-last-child(1) {
     margin-right: 0;
 }
 
 
 
-&__btn {
+.button-list__btn {
     background: var(--backgroundworklist);
     border-radius: 4px;
     text-align: center;
@@ -40,15 +41,14 @@
 
 }
 
-&__btn:hover,
-&__btn:focus {
+.button-list__btn:hover,
+.button-list__btn:focus {
     color: var(--background-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12)
 }
 
-&__btn--current {
+.button-list__btn--current {
     color: var(--background-color);
     background-color: var(--accent-color);
-}
 }
