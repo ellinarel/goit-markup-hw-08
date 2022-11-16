@@ -1,5 +1,11 @@
 .main-content {
-    padding-top: 94px;
+    @include respondTo ("pre-large"){
+        padding-top: 60px;
+    }
+    @include respondTo ("large") {
+            padding-top: 94px;
+        }
+   
 }
 .portfolio-notitle {
     position: absolute;
