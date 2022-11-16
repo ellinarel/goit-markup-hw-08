@@ -5,8 +5,10 @@
     padding-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    margin-bottom: -30px;
     @include respondTo ("pre-medium"){
         justify-content: center;
+        
     }
     @include respondTo ("medium"){
     margin-bottom: -30px;
