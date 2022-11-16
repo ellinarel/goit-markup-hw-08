@@ -1812,14 +1812,6 @@ footer {
   border: 1px solid var(--boxborder);
   border-top: none;
 }
-@media (min-width: 768px) {
-  .img-list__card-text {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 @media (max-width: 1199px) {
   .img-list__card-text {
     -webkit-box-flex: 1;

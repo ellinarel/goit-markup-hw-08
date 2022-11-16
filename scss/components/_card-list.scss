@@ -107,12 +107,7 @@ flex-direction: column;
     margin: 0;
     border: 1px solid var(--boxborder);
     border-top: none;
-    @include respondTo ("medium"){
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    }
+    
     @include respondTo ("pre-large"){
         flex-grow: 1;
     }
