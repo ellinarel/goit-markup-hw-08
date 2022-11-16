@@ -1700,6 +1700,13 @@ footer {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
+@media (max-width: 767px) {
+  .img-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media (max-width: 1199px) {
   .img-list {
     padding-bottom: 60px;
@@ -1763,7 +1770,7 @@ footer {
 }
 @media (max-width: 767px) {
   .img-list__box {
-    width: 450px;
+    width: 100%;
     height: 404px;
     margin-bottom: 30px;
   }
