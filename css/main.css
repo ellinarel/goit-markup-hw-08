@@ -203,15 +203,20 @@ html {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media (max-width: 767px) {
+  .footer-form__input {
+    width: 100%;
+  }
+}
 @media (min-width: 1200px) {
   .footer-form__input {
     width: 358px;
     height: 50px;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
   .footer-form__input {
-    width: 100%;
+    width: 450px;
     height: 50px;
   }
 }
@@ -1594,13 +1599,44 @@ footer {
           margin-block-start: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
-  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .button-list {
+    margin-bottom: 30px;
+    width: 400px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    row-gap: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+  }
 }
 
 .button-list__item {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
-  margin-right: 9px;
+}
+@media (min-width: 768px) {
+  .button-list__item {
+    margin-right: 9px;
+  }
 }
 
 .button-list__item:nth-last-child(1) {

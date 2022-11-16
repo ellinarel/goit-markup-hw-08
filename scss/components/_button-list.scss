@@ -5,13 +5,31 @@
     padding-inline-start: 0px;
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-bottom: 50px;
+    @include respondTo ("pre-medium"){
+        margin-bottom: 30px;
+        width: 400px;
+        justify-content: start;
+        flex-wrap: wrap;
+        column-gap: 8px ;
+        row-gap: 15px;
+
+    }
+    @include respondTo ("medium"){
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    @include respondTo ("large"){
+        margin-bottom: 50px;
+    }
 }
 
 
 .button-list__item {
     padding-inline-start: 0;
+   
+    @include respondTo ("medium"){
     margin-right: 9px;
+    }
 
 }
 
