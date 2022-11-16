@@ -482,6 +482,11 @@ footer {
     margin-bottom: 10px;
   }
 }
+@media (min-width: 1200px) {
+  .nav-contacts__item-part:nth-child(1) {
+    margin-bottom: 0;
+  }
+}
 .nav-contacts__link-part {
   text-decoration: none;
   font-weight: 500;

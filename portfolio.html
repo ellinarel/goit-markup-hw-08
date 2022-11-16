@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <header class="page-header">
+    <header>
+      <div class="page-header">
       <div class="container">
         <div class="header-box">
         <nav class="main-nav">
@@ -54,6 +55,22 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            
+          > <use href="./images/symbol-defs.svg#icon-menu-mobile">
+
+          </use>
+           
+          </svg>
+        </button>
+      </div>
       </div>
       </div>
     </header>
@@ -290,6 +307,7 @@
     <footer>
       
       <div class="container-footer">
+       <div class="footer-table-thumb">
         <div class="footer-contacts">
         <a class="footer-contacts__link" href="#"
           ><span class="footer-contacts__logo-accent">Web</span
@@ -344,20 +362,73 @@
 
 
       </div>
+      </div>
       <div class="footer-link">
         <p class="footer-link__title">Підпишіться на розсилку</p>
         <form class="footer-form">
           <label class="footer-form__label visually-hidden" for="footer-email" class="footer-email">email</label>
+          
           <input  class="footer-form__input" type="email" id="footer-email" name="email" placeholder="E-mail">
+          <div class="footer-btn-thumb">
           <button class="footer-form__btn-send" type="submit">Підписатися
             <svg class="footer-form__icon-send" width="24" height="24" >
               <use href="./images/symbol-defs.svg#icon-icon-send" > </use>
             </svg>
           </button>
+          </div>
         </form>
 
       </div>
      </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-btn js-close-menu">
+        <svg
+  
+          width="24"
+          height="24"
+        >
+        <use href="./images/symbol-defs.svg#icon-menu-mobile-close">
+
+        </use>
+          
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-link"><a href="./index.html" class="link">Студія</a></li>
+        <li class="mobile-menu-link"><a href="" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      
+      </ul>
+      <div class="mobile-menu-thumb">
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-item"> <a href="tel:+380961111111" class="mobile-menu-tel"> +38 096 111 11 11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="mobile-menu-mail">info@devstudio.com</a></li>
+      </ul>
+     
+      <ul class="mobile-menu-social-links">
+        <li><a href="" class="mobile-menu-soclink link">Instagram</a>
+      </li>  
+  
+        
+        <li><a href="" class="mobile-menu-soclink link">Twitter</a>
+        </li>
+         
+        <li><a href="" class="mobile-menu-soclink link">Facebook</a>
+        </li>
+         
+        <li><a href="" class="mobile-menu-soclink">LinkedIn</a></li>
+      </ul>
+       </div>
+    </div>
+
+   <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
